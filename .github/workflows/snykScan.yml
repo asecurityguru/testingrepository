@@ -8,7 +8,7 @@ jobs:
     name: SCA scan using Snyk
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@main
+      - uses: actions/checkout@master
       - name: RunSnyk to check for vulnerabilities
         uses: snyk/actions/maven@master
         continue-on-error: true
